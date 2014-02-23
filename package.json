@@ -1,0 +1,16 @@
+{
+  "name": "andyfowler.com",
+  "title": "andyfowler.com",
+  "version": "0.0.1",
+  "private": true,
+  "author": {
+    "name": "Andy Fowler"
+  },
+  "devDependencies": {
+    "lineman": "~0.24.10"
+  },
+  "scripts": {
+    "start": "lineman run",
+    "test": "lineman spec-ci"
+  }
+}
