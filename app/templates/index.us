@@ -1,0 +1,9 @@
+<div class="container">
+	<h1>Andy Fowler</h1>
+
+	<div id="intro">
+		<p>I’m a software engineer in Ann Arbor, building a new-wave CRM at <a href="http://www.nutshell.com/">Nutshell</a>. I’m also a <a href="http://www.michiganflyers.org/">private pilot</a> and <a href="http://instagram.com/p/aTwi63h0N6/">beagle wrangler</a>.</p>
+
+		<p>You can find me on <a href="http://twitter.com/andyfowler">Twitter</a>, <a href="https://github.com/andyfowler/">GitHub</a>, and <a href="/contact.html">many other places</a>.</p>
+	</div>
+</div>

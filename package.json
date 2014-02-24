@@ -7,7 +7,10 @@
     "name": "Andy Fowler"
   },
   "devDependencies": {
-    "lineman": "~0.24.10"
+    "lineman": "^0.24.10",
+    "grunt": "^0.4.2",
+    "grunt-markdown-blog": "^0.3.2",
+    "lineman-blog": "0.0.2"
   },
   "scripts": {
     "start": "lineman run",
