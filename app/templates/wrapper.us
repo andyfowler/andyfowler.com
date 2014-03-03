@@ -11,6 +11,7 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     <link rel="stylesheet" type="text/css" href="<%= css %>" media="all" />
+    <link rel="alternate" type="application/rss+xml" title="<%= site.title %> | feed" href="/index.xml" />
   </head>
 
   <body>
