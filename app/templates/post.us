@@ -8,4 +8,6 @@
     <%= post.content() %>
   </div>
 
+  <div id="airplane">✈</div>
+
 </div>
