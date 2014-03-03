@@ -1,2 +1,11 @@
+<div id="container">
+  <h1><a href="/" class="back"></a><a href="/">Andy Fowler</a></h1>
 
-<%= post.content() %>
+  <h2><a href="/<%= post.htmlPath() %>"><%= post.title() %></a></h2>
+  <div class="date"><%= post.date() %></div>
+
+  <div class="blog">
+    <%= post.content() %>
+  </div>
+
+</div>

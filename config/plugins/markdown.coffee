@@ -12,4 +12,5 @@ module.exports = (lineman) ->
         description: ""
         url: "http://www.andyfowler.com"
         rssCount: 10 #<-- remove, comment, or set to zero to disable RSS generation
+        dateFormat: 'MMMM Do, YYYY'
         #disqus: "my_disqus_name" #<-- uncomment and set your disqus account name to enable disqus support

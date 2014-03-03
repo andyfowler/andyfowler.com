@@ -1,9 +1,21 @@
-<div class="container">
-	<h1>Andy Fowler</h1>
+<div id="container">
+  <h1><a href="/">Andy Fowler</a></h1>
 
-	<div id="intro">
-		<p>I’m a software engineer in Ann Arbor, building a new-wave CRM at <a href="http://www.nutshell.com/">Nutshell</a>. I’m also a <a href="http://www.michiganflyers.org/">private pilot</a> and <a href="http://instagram.com/p/aTwi63h0N6/">beagle wrangler</a>.</p>
+  <div id="intro">
+    <p>I’m a software engineer in Ann Arbor, building a new-wave CRM at <a href="http://www.nutshell.com/">Nutshell</a>. I’m also a <a href="http://www.michiganflyers.org/">private pilot</a> and <a href="http://instagram.com/p/aTwi63h0N6/">beagle wrangler</a>.</p>
 
-		<p>You can find me on <a href="http://twitter.com/andyfowler">Twitter</a>, <a href="https://github.com/andyfowler/">GitHub</a>, and <a href="/contact.html">many other places</a>.</p>
-	</div>
+    <p>You can find me on <a href="http://twitter.com/andyfowler">Twitter</a>, <a href="https://github.com/andyfowler/">GitHub</a>, and <a href="/contact.html">many other places</a>.</p>
+  </div>
+
+  <h2>Writing</h2>
+  <ul class="biglist posts">
+    <% _(site.posts).chain().reverse().each(function(post){ %>
+      <li>
+        <a href="/<%= post.htmlPath() %>"><%= post.title() %></a>
+        <span class="date"><%= post.date() %></span>
+      </li>
+    <% }) %>
+  </ul>
+
+  <div id="airplane">✈</div>
 </div>

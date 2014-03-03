@@ -1,2 +1,6 @@
+<div id="container">
+  <h1><a href="/" class="back"></a><a href="/">Andy Fowler</a></h1>
 
-<%= post.content() %>
+  <%= post.content() %>
+
+</div>

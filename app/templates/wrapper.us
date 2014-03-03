@@ -17,6 +17,7 @@
 
     <%= yield %>
 
+    <div id="barclay"></div>
     <script type="text/javascript" src="<%= js %>"></script>
 
     <script>

@@ -1,3 +1,160 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
-	font-family: "adelle", sans-serif;
+  color: #222;
+  font-family: "adelle", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 100;
+  background-image: url(/img/bg.png);
+}
+
+a {
+  color: #1f306e;
+  text-decoration: none;
+  &:hover {
+    color: #b33e44;
+    border-bottom: 1px solid #b33e44;
+  }
+}
+p { // slightly lighter in paragraphs, since they're smaller
+  a {
+    color: #253a86;
+    border-bottom: 1px solid #c3cbf5;
+    &:hover { border-bottom: 1px solid #b33e44; }
+  }
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 48px;
+  position: relative;
+
+  a.back {
+    &:before { content: '←'; }
+    &:hover { border-bottom: none; }
+    display: block;
+    position: absolute;
+    left: -50px;
+  }
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h1,
+h2 {
+  a {
+    color: inherit;
+    font-weight: inherit;
+  }
+}
+
+
+//
+// layout
+//
+#container {
+  max-width: 550px;
+  margin: 30px auto 0 auto;
+  padding: 0 20px;
+}
+
+#content-inset {
+  background-color: rgba(255, 255, 255, 0.25);
+  margin-top: 30px;
+  padding: 10px 30px;
+}
+
+#barclay {
+  position: fixed;
+  width: 33px;
+  height: 22px;
+  bottom: 0;
+  right: 50px;
+  background: url(/img/barclay.png);
+}
+
+#airplane {
+  margin-top: 30px;
+  padding-top: 60px; // the font creeps outside of the container otherwise ¯\_(ツ)_/¯
+  text-align: center;
+  opacity: 0.5;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8),
+               0px 0px 30px rgba(255, 255, 255, 0.4),
+               0px 0px 50px rgba(255, 255, 255, 0.3),
+               0px 0px 40px rgba(27, 42, 97, 0.2);
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 222px;
+}
+
+ul.biglist {
+  list-style-type: none;
+  padding: 0;
+  li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+ul.posts {
+  li {
+    a {
+      border-bottom: 1px solid #ccc;
+    }
+    span {
+      font-size: 12px;
+      float: right;
+    }
+  }
+}
+
+ul.links {
+  li {
+    line-height: 30px;
+
+    a { font-weight: 400; }
+    span {
+      opacity: 0.3;
+      font-weight: 100;
+    }
+  }
+}
+
+//
+// per-page
+//
+#intro {
+  margin-bottom: 40px;
+  p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  a {
+    font-weight: 400;
+    border-bottom: none;
+  }
+}
+
+div.date {
+  font-size: 12px;
+  margin-top: -16px;
+  color: #666;
+}
+
+.blog {
+  margin-bottom: 40px;
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "proxima-nova", sans-serif;
+  }
 }
